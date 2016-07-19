@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+		<head>	
+			
+			<meta name="Keywords" content="vývar, konečně vývar, vaření, jídlo, recepty, zdraví, potraviny, zdravé potraviny, farmářské potraviny, zelenina, zeleninový vývar, kuřecí vývar, hovězí vývar, stock, broth, chicken stock, chicken broth, vegetable stock, vegetable broth, beef broth, beef stock, bujón, bouillon, jaroslav, vácha, jakub, gruber, jan, vácha, konecne vyvar, vyvar, konecnevyvar, konecnevyvar.cz, zapomeň na kostku, zapomen na kostku" />
+			<meta property="og:image" content="http://konecnevyvar.cz/img/web_thumbnail.jpg"/>
+			<meta property="og:description" content="Zapomeň na kostku!"/>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>Konečně vývar</title>
+			<link rel="stylesheet" href="main.css" type="text/css" />
+			
+			<meta name="msapplication-TileColor" content="#0000ff">
+			<meta name="msapplication-TileImage" content="img/icon144x144.png">
+			<link rel="apple-touch-icon-precomposed" href="img/icon152x152.png">
+			<link rel="icon" href="img/icon96x96.png">
+		
+			<link rel="image_src" type="image/jpeg" href="img/web_thumbnail.jpg" />
+
+			<!-- Facebook Pixel Code -->
+			<script>
+			!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+			document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+			fbq('init', '462888793908681');
+			fbq('track', "PageView");</script>
+			<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=462888793908681&ev=PageView&noscript=1"
+			/></noscript>
+			<!-- End Facebook Pixel Code -->
+	
+<script src="jquery-1.11.1.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<!--
+<script>
+		function hover() {
+		  document.getElementById("fb").src = "img/fb_over_.png";
+		}
+		
+		function out() {
+		  document.getElementById("fb").src = "img/fb_.png";
+		}
+</script>
+-->
+
+ <script>
+ 
+ 
+ 
+ var LocationData = [
+
+ 	// Česká stodola
+		
+		// ČS Vodičkova 28 Praha
+		//[50.080788, 14.424136, '<div class="content"><p><h1>ČESKÁ&nbsp;STODOLA</h1>Vodičkova&nbsp;28, Praha&nbsp;1<br />Po&nbsp;&mdash;&nbsp;Pá&nbsp;7:30&nbsp;&mdash;&nbsp;20:00<br />So&nbsp;9:00&nbsp;&mdash;&nbsp;17:00<br /><a href="http://www.ceska-stodola.cz" target="_blank">ceska-stodola.cz</a></p></div>' ], 
+		
+		// ČS Nuselská 23 Praha
+		//[50.063026, 14.443780, '<div class="content"><p><h1>ČESKÁ&nbsp;STODOLA</h1>Nuselská&nbsp;23, Praha&nbsp;4<br />Po&nbsp;&mdash;&nbsp;Pá&nbsp;7:30&nbsp;&mdash;&nbsp;19:30<br />So&nbsp;8:00&nbsp;&mdash;&nbsp;12:00<br /><a href="http://www.ceska-stodola.cz" target="_blank">ceska-stodola.cz</a></p></div>' ], 
+	
+	// Country Life
+
+		// CL Melantrichova Praha
+		//[50.0856866, 14.420523600000024, '<div class="content"><p><h1>COUNTRY LIFE</h1>Melantrichova 15, Praha 1<br />Po&mdash;Pá 8:30&mdash;17:30<br />Ne 11:00&mdash;18:00<br /><a href="http://www.countrylife.cz/" target="_blank">countrylife.cz</a></p></div>' ],
+		
+		// CL Jungmannova Praha
+		//[50.0794451, 14.422060600000009, '<div class="content"><p><h1>COUNTRY LIFE</h1>Jungmannova 1, Praha 1<br />Po&mdash;Pá 8:30&mdash;17:30<br /><a href="http://www.countrylife.cz/" target="_blank">countrylife.cz</a></p></div>' ],
+		
+		// CL Čs. armády Praha
+		//[50.1008765, 14.398283300000003, '<div class="content"><p><h1>COUNTRY LIFE</h1>Čs. armády 30, Praha&nbsp;6&nbsp;&mdash;&nbsp;Dejvice<br />Po&mdash;Pá 8:30&mdash;17:30<br /><a href="http://www.countrylife.cz/" target="_blank">countrylife.cz</a></p></div>' ],
+		
+		// CL Sokolovská Praha
+		//[50.0944284, 14.452283599999987, '<div class="content"><p><h1>COUNTRY LIFE</h1>Sokolovská 93, Praha 8<br />Po&mdash;Pá 8:00&mdash;17:30<br /><a href="http://www.countrylife.cz/" target="_blank">countrylife.cz</a></p></div>' ],
+		
+		// CL Vinohradská  Praha
+		//[50.077803, 14.456386000000066, '<div class="content"><p><h1>COUNTRY LIFE</h1>Vinohradská 125, Praha 3<br />Po&mdash;Pá 8:30&mdash;17:30<br /><a href="http://www.countrylife.cz/" target="_blank">countrylife.cz</a></p></div>' ],
+		
+		// CL Francouzská Praha
+		//[50.07290709999999, 14.442528700000025, '<div class="content"><p><h1>COUNTRY LIFE</h1>Francouzská 835/29, Praha 2<br />Po&mdash;Pá 8:30&mdash;17:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a></p></div>' ]
+	
+	// Náš Grunt Praha
+
+		// NG Bělehradská 69 Praha
+		[50.0730672, 14.433004200000028, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Bělehradská 69 &bull; Praha 2<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 7:30&mdash;13:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-belehradska@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Náchodská 137 Praha
+		[50.1162844, 14.617293700000005, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Náchodská 137<br />Praha&nbsp;20&nbsp;&mdash;&nbsp;Horní&nbsp;Počernice<br />Po&mdash;Pá 7:00&mdash;19:00<br />So 8:00&mdash;12:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-pocernice@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+			// NG Sokolovská 19 Praha
+	//	[50.09184699999999, 14.440725899999961, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Sokolovská 19 &bull; Praha 8<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 9:00&mdash;13:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-florenc@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+			
+		// NG Křenova  Praha
+		[50.089021, 14.344299, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Křenova 438/5 &bull; Praha 6<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-petriny@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+			
+		// NG Francouzská Praha
+		[50.073262, 14.441251, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Francouzská 771/23 &bull; Praha 2<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-francouzska@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Radhošťská 2 Praha
+		[50.0778389, 14.457106299999964, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Radhošťská 2 &bull; Praha 3<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 8:00&mdash;13:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-radhostska@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Vrážská 2a Praha
+		[49.9848002, 14.364217100000019, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Vrážská 2a<br />Praha&nbsp;16&nbsp;&mdash;&nbsp;Radotín<br />Po&mdash;Pá 7:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:praha-radotin@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+	// Náš Grunt other
+
+		// NG Břeclav ZAVŘENO
+		// [48.7571485, 16.89197839999997, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Slovácká 82 &bull; Břeclav<br />Po&mdash;Pá 7:30&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:brno.holandska@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Pardubice
+		[50.0338121, 15.769072499999993, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Smilova 547 &bull; Pardubice<br />Po&mdash;Pá 7:30&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:pardubice@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Pribram
+		[49.6890592, 14.01442320000001, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Dlouhá 142 &bull; Příbram<br />Po&mdash;Pá 7:00&mdash;17:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:pribram@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Zdar n/S ZAVŘENO
+		// [49.5643012, 15.939102999999932, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Havlíčkovo náměstí 5<br />Žďár nad Sázavou<br />Po&mdash;Pá 8:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:brno.holandska@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Uh. Hradiste
+		[49.06966329999999, 17.46295729999997, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Obchodní 1507<br />Uherské Hradiště<br />Po&mdash;Pá 7:00&mdash;18:00<br />So 7:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:uh@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG HRADEC KRÁLOVÉ 1
+		[50.2134632, 15.811360700000023, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Zamenhofova 3 &bull; Hradec Králové<br />Po&mdash;Pá 8:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:hradec-zamenhofova@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG HRADEC KRÁLOVÉ 2
+		[50.2107776, 15.826159800000028, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Švehlova 363 &bull; Hradec Králové<br />Po&mdash;Pá 8:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:hradec-svehlova@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG České Budějovice
+		[48.9759907, 14.475432700000056, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Hroznová 18<br />České Budějovice<br />Po&mdash;Pá 7:30&mdash;18:00<br />So 8:00&mdash;11:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:cb@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Olomouc
+		[49.592697, 17.253527, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Dolní náměstí 12 &bull; Olomouc<br />Po&mdash;Pá 8:00&mdash;18:30<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:olomouc@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Hodonín ZAVŘENO
+		// [48.851477, 17.130601, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Měšťanská 1 &bull; Hodonín<br />Po&mdash;Pá 8:00&mdash;18:00<br />So 8:00&mdash;11:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:brno.holandska@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Liberec
+		[50.766977, 15.056967, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Revoluční 66/2 &bull; Liberec<br />Po&mdash;Pá 7:30&mdash;18:30<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:liberec@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Plzeň
+		[49.752177, 13.379918, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Na Roudné 105/1 &bull; Plzeň<br />Po&mdash;Pá 7:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:plzen-roudna@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Poděbrady
+		[50.144847, 15.120990, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Lázeňská 1458 &bull; Poděbrady<br />Po&mdash;Pá 7:30&mdash;17:30<br />So 8:00&mdash;11:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:podebrady@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Tábor
+		[49.413559, 14.674782, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Husovo náměstí 531 &bull; Tábor<br />Po&mdash;Pá 7:30&mdash;18:00<br />So 8:30&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:tabor@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Kladno
+		[50.146495, 14.102883, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Náměstí starosty Pavla 10 &bull; Kladno<br />Po&mdash;Pá 7:30&mdash;18:30<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:kladno@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Opava ZAVŘENO
+		// [50.1464983, 14.102904500000022, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Pekařská 133/2 &bull; Opava<br />Po&mdash;Pá 7:30&mdash;18:30<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:brno.holandska@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+					
+		// NG Kolín
+		[50.0279366, 15.20342800000003, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Rubešova 59 &bull; Kolín<br />Po&mdash;Pá 7:30&mdash;18:00<br />So 8:00&mdash;11:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:kolin@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Mladá Boleslav
+		[50.4239492, 14.916970300000003, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Václava Klementa 807 &bull; Mladá Boleslav<br />Po&mdash;Pá 6:00&mdash;17:30<br />So 8:00&mdash;11:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:mladaboleslav@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Prostějov
+		[49.4726392, 17.12246349999998, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Nám. Padlých hrdinů 1 &bull; Prostějov<br />Po&mdash;Pá 7:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:prostejov@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Ostrava
+		[49.830728, 18.286726, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Jantarová 3347 &bull; Ostrava<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 8:30&mdash;12:30<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:ostrava-karolina@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Ostrava-Poruba
+		[49.832172, 18.175322, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Porubská 825 &bull; Ostrava-Poruba<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 8:30&mdash;13:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:ostrava-poruba@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Frýdek-Místek
+		[49.674773, 18.341311, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Tržní 19 &bull; Frýdek-Místek<br />Po&mdash;Pá 7:30&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:frydek-mistek@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// NG Brno
+		[49.183691, 16.594932, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Vídeňská 1010/22c &bull; Brno<br />Po&mdash;Pá 7:30&mdash;19:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:brno-videnska@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+	
+		// NG Hlučín
+		[49.896726, 18.199073, '<div class="content"><p><h1>NÁŠ GRUNT</h1>Ostravská 1810/81a &bull; Hlučín<br />Po&mdash;Pá 7:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.nasgrunt.cz/" target="_blank">nasgrunt.cz</a><br /><a href="mailto:hlucin@nasgrunt.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+	
+
+	//Sklizeno Praha
+
+
+		// Sklizeno Vodičkova
+		[50.081767, 14.424385, '<div class="content"><p><h1>SKLIZENO</h1>Vodičkova 709/33 &bull; Praha 1<br />Po&mdash;Pá 9:00&mdash;20:00<br />So 10:00&mdash;19:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:vodickova@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// Sklizeno Harfa
+		[50.104445, 14.490645, '<div class="content"><p><h1>SKLIZENO</h1>Galerie Harfa<br />Českomoravská 2420/15a<br />Praha 9<br />Po&mdash;Pá 8:00&mdash;21:00<br />So 9:00&mdash;21:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:harfa@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// Sklizeno Dejvická
+		[50.098423, 14.400778, '<div class="content"><p><h1>SKLIZENO</h1>Dejvická 26 &bull; Praha 6<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 8:00&mdash;15:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:dejvicka@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// Sklizeno Karlín
+		[50.094016, 14.449775, '<div class="content"><p><h1>SKLIZENO</h1>Sokolovská 192/79 &bull; Praha 8<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 8:30&mdash;13:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="karlin@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// Sklizeno Korunní
+		[50.075381, 14.453189, '<div class="content"><p><h1>SKLIZENO</h1>Korunní 1302/88 &bull; Praha 10<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 8:00&mdash;14:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:korunni@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Sklizeno Bělehradská
+		[50.073824, 14.433227, '<div class="content"><p><h1>SKLIZENO</h1>Bělehradská 94 &bull; Praha 2<br />Po&mdash;Pá 7:30&mdash;19:30<br />So 8:00&mdash;14:00<br />Ne 9:00&mdash;14:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:belehradska@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Sklizeno Fénix
+		[50.110478, 14.501584, '<div class="content"><p><h1>SKLIZENO</h1>OC Fénix &bull; Freyova 945/35<br />Praha 9<br />Po&mdash;Pá 8:00&mdash;21:00<br />So 9:00&mdash;21:00<br />Ne 9:00&mdash;21:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:fenix@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Sklizeno Waltrovka
+		[50.056348, 14.374734, '<div class="content"><p><h1>SKLIZENO</h1>Budova Aviatica<br />Peroutkova 589/110 &bull; Praha 5<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 9:00&mdash;14:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:waltrovka@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+
+	// Sklizeno Brno
+
+
+		// Sklizeno Brno Campus
+		[49.177053, 16.565858, '<div class="content"><p><h1>SKLIZENO</h1>OC Campus &bull; Netroufalky 770<br />Brno<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 8:00&mdash;14:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:campus@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Sklizeno Brno Křídlovická (U Ronda)
+		[49.186335, 16.602944, '<div class="content"><p><h1>SKLIZENO</h1>Křídlovická 348/45A &bull; Brno<br />Po&mdash;Pá 7:30&mdash;19:30<br />So 8:30&mdash;12:30<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:kridlovicka@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Sklizeno Brno Josefská
+		[49.192368, 16.612123, '<div class="content"><p><h1>SKLIZENO</h1>Josefská 427/14 &bull; Brno<br />Po&mdash;Pá 8:00&mdash;20:00<br />So 9:00&mdash;15:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:josefska@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Sklizeno Brno Palackého
+		[49.226564, 16.591446, '<div class="content"><p><h1>SKLIZENO</h1>Palackého třída 238/93 &bull; Brno<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 9:00&mdash;13:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:palackeho@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+
+	// My Food
+
+		// My Food Radnická (Zelný trh)
+		[49.193134, 16.609011, '<div class="content"><p><h1>MY FOOD</h1>Radnická 377/9 &bull; Brno<br />Po&mdash;Pá 8:00&mdash;19:00<br />So 8:00&mdash;16:00<br /><a href="http://www.myfoodmarket.cz/" target="_blank">myfoodmarket.cz</a><br /><a href="mailto:brno.zelnytrh@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// My Food U Dálnice (Olympia)
+		[49.137956, 16.633810, '<div class="content"><p><h1>MY FOOD</h1>OC Olympia &bull; U Dálnice 777<br />Modřice<br />Po&mdash;Pá 10:00&mdash;21:00<br />So 9:00&mdash;21:00<br /><a href="http://www.myfoodmarket.cz/" target="_blank">myfoodmarket.cz</a><br /><a href="mailto:brno.olympia@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// My Food Vaňkovka
+		[49.189076, 16.613700, '<div class="content"><p><h1>MY FOOD</h1>OC Vaňkovka &bull; Ve Vaňkovce 1<br />Brno<br />Po&mdash;Pá 8:00&mdash;19:00<br />So 8:00&mdash;16:00<br /><a href="http://www.myfoodmarket.cz/" target="_blank">myfoodmarket.cz</a><br /><a href="mailto:brno.vankovka@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// My Food Holandská
+		[49.181611, 16.604429, '<div class="content"><p><h1>MY FOOD</h1>Holandská 868/5 &bull; Brno<br />Po&mdash;Pá 7:00&mdash;18:00<br /><a href="http://www.myfoodmarket.cz/" target="_blank">myfoodmarket.cz</a><br /><a href="mailto:brno.holandska@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// My Food Corso
+		[50.092543, 14.450456, '<div class="content"><p><h1>MY FOOD</h1>Křižíkova 682/34a &bull; Praha 8<br />Po&mdash;Pá 7:30&mdash;19:00<br /><a href="http://www.myfoodmarket.cz/" target="_blank">myfoodmarket.cz</a><br /><a href="mailto:praha.corso@myfoodmarket.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+	// Brno other
+
+		// Zdravá výživa
+		[49.195260, 16.644787, '<div class="content"><p><h1>ZDRAVÁ VÝŽIVA</h1>Táborská 93 &bull; Brno – Židenice<br />Po&mdash;Pá 9:00&mdash;17:00<br /><a href="http://www.zdravavyziva-brno.cz/" target="_blank">http://zdravavyziva-brno.cz</a><br /><a href="mailto:zdravavyziva@email.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Jednoduše kavárna
+		[49.247737, 16.575796, '<div class="content"><p><h1>JEDNODUŠE KAVÁRNA</h1>Družstevní 21 &bull; Brno – Řečkovice<br />Po&mdash;Pá 10:00&mdash;21:00<br />So&mdash;Ne 10:00&mdash;19:00<br /><a href="https://www.facebook.com/Jednodu%C5%A1e-kav%C3%A1rna-487290301387283" target="_blank">FCB Jednoduše kavárna</a><br /><a href="mailto:jednodusekavarna@email.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+
+
+	// Debnickari.sk
+
+		// Bratislava
+		[48.148982, 17.093938, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Bratislava<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Trenčín
+		[48.884111, 18.035773, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Bratislava<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Trnava
+		[48.369604, 17.586513, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Trnava<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Nitra
+		[48.306546, 18.076288, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Nitra<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Bánovce nad Bebravou
+		[48.719813, 18.260918, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Bánovce<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Hlohovec
+		[48.426429, 17.803722, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Hlohovec<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Košice
+		[48.715908, 21.261845, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Košice<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Banská Bystrica
+		[48.736572, 19.149509, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Banská Bystrica<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Zvolen
+		[48.576300, 19.135273, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Zvolen<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Prievidza
+		[48.774299, 18.622189, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Prievidza<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Senec
+		[48.216595, 17.406431, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Senec<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Piešťany
+		[48.591066, 17.831369, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Piešťany<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Pezinok
+		[48.289015, 17.265255, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Pezinok<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+		// Žilina
+		[49.219248, 18.740711, '<div class="content"><p><h1>DEBNICKARI.SK</h1>Žilina<br />Do tohoto města zaváží<br /><a href="http://www.debnickari.sk/" target="_blank">debnickari.sk</a></p></div>' ],
+
+
+	// Farmářský obchod Plzeň
+
+		// Farmářský obchod Plzeň SLOVANY
+		[49.396470, 15.590978,'<div class="content"><p><h1>FARMÁŘSKÝ OBCHOD</h1>Lobezská 63 &bull; Plzeň<br />Po&mdash;Pá 7:30&mdash;17:30<br />So 8:00&mdash;17:30<br /><a href="http://www.farmarsky-obchod.cz/" target="_blank">farmarsky-obchod.cz</a><br /><a href="mailto:info@farmarsky-obchod.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Farmářský obchod  Plzeň CENTRUM
+		[49.666002, 18.674753,'<div class="content"><p><h1>FARMÁŘSKÝ OBCHOD</h1>Šafaříkovy sady 3 &bull; Plzeň<br />Po&mdash;Pá 9:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.farmarsky-obchod.cz/" target="_blank">farmarsky-obchod.cz</a><br /><a href="mailto:info@farmarsky-obchod.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+ 		// Farmářský obchod KLATOVY
+		[49.395480, 13.291745,'<div class="content"><p><h1>FARMÁŘSKÝ OBCHOD</h1>Denisova 93 &bull; Klatovy<br />Po&mdash;Pá 7:30&mdash;17:30<br />So 8:00&mdash;12:00<br /><a href="http://www.farmarsky-obchod.cz/" target="_blank">farmarsky-obchod.cz</a><br /><a href="mailto:info@farmarsky-obchod.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+
+	// other
+
+		//Farmářka Jihlava
+		[49.396470, 15.590978,'<div class="content"><p><h1>FARMÁŘKA</h1>Masarykovo nám. 99/67 &bull; Jihlava<br />Po&mdash;Pá 7:30&mdash;17:30<br />So 8:30&mdash;12:30<br /><a href="https://www.facebook.com/farmarkajihlava" target="_blank">FB Farmářka Jihlava</a><br /><a href="mailto:obchod@farmarkajihlava.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		//Pochutnej si Třinec
+		[49.666002, 18.674753,'<div class="content"><p><h1>POCHUTNEJ SI</h1>Koperníkova 1164 &bull; Třinec<br />Po&mdash;Pá 9:00&mdash;18:00<br />So 8:00&mdash;12:00<br /><a href="http://www.pochutnejsi.cz/" target="_blank">pochutnejsi.cz</a><br /><a href="mailto:info@pochutnejsi.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+ 		//Na Maso
+		[50.102898, 14.395697,'<div class="content"><p><h1>NA MASO</h1>Rooseveltova 892/49 &bull; Praha 6<br />Po&mdash;Pá 9:30&mdash;18:30<br />So 9:30&mdash;12:30<br /><a href="http://www.namaso.cz/" target="_blank">namaso.cz</a><br /><a href="mailto:info@namaso.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Orbis Food
+		[50.160237, 14.397713,'<div class="content"><p><h1>ORBIS FOOD</h1>Nádražní 67 &bull; Roztoky<br />Po&mdash;Pá 7:00&mdash;21:00<br />So 8:00&mdash;21:00<br /><a href="http://www.orbisfood.cz/" target="_blank">orbisfood.cz</a><br /><a href="mailto:info@orbisfood.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+		
+		// Plzeň Košík
+		[49.776436, 13.367217,'<div class="content"><p><h1>KOŠÍK</h1>Gerská 1951/15 &bull; Plzeň<br />Po&mdash;Pá 9:00&mdash;18:00<br />So 9:00&mdash;12:00<br /><a href="http://www.farmarsky-obchod.cz/kontakty.htm" target="_blank">farmarsky-obchod.cz</a><br /><a href="mailto:info@farmarsky-obchod.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Moje BIO
+		[50.083922, 14.364872,'<div class="content"><p><h1>MOJE BIO</h1>Bělohorská 197/126 &bull; Praha 6<br />Po&mdash;Pá 9:00&mdash;18:30<br />So 9:00&mdash;12:00<br /><a href="http://www.mojebio.com/" target="_blank">mojebio.com</a><br /><a href="mailto:Info@mojebio.com?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Food Story Kunratice
+		[50.013606, 14.484288,'<div class="content"><p><h1>FOOD STORY</h1>K Libuši 129/2 &bull; Praha 4<br />Po&mdash;Ne 8:00&mdash;20:00<br /><a href="http://www.foodstory.cz/" target="_blank">foodstory.cz</a><br /><a href="mailto:kunratice@foodstory.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Food Story Dlouhá
+		[50.089464, 14.422889,'<div class="content"><p><h1>FOOD STORY</h1>Dlouhá 14 &bull; Praha 1<br />Po&mdash;So 8:00&mdash;21:00<br />Ne 9:00&mdash;21:00<br /><a href="http://www.foodstory.cz/" target="_blank">foodstory.cz</a><br /><a href="mailto:dlouha@foodstory.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Naše Farma DBK
+		[50.043984, 14.449058,'<div class="content"><p><h1>NAŠE FARMA</h1>OC DBK &bull; Budějovická 64 &bull; Praha 4<br />Po&mdash;Pá 9:00&mdash;20:00<br />So&mdash;Ne 9:00&mdash;19:00<br /><a href="mailto:nasefarma@centrum.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Farmářský KRÁM
+		[50.132363, 14.550273,'<div class="content"><p><h1>FARMÁŘSKÝ KRÁM</h1>Žacléřská 1 &bull; Praha 19<br />Po&mdash;Pá 8:00&mdash;20:00<br />So 8:00&mdash;18:00<br />Ne 15:00&mdash;20:00<br /><a href="http://www.farmarskykram.cz/" target="_blank">farmarskykram.cz</a><br /><a href="mailto:info@farmarskykram.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Farmářský koloniál Plzeň
+		[49.730354, 13.394188,'<div class="content"><p><h1>FARMÁŘSKÝ KOLONIÁL</h1>Slovanská 124 &bull; Plzeň<br />Po&mdash;Pá 10:00&mdash;18:00<br /><a href="https://www.facebook.com/farmarskykolonial/" target="_blank">FB Farmářský koloniál</a></p></div>' ],
+
+		// U Brázdů Blansko
+		[49.363956, 16.644733,'<div class="content"><p><h1>U BRÁZDŮ</h1>nám. Svobody 13/9 &bull; Blansko<br />Po&mdash;Pá 14:00&mdash;19:00<br />So 9:00&mdash;12:00<br /><a href="http://ubrazdu.cz/" target="_blank">ubrazdu.cz</a><br /><a href="mailto:info@ubrazdu.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Mája Turnov
+		[50.587755, 15.141160,'<div class="content"><p><h1>MÁJA</h1>Nádražní 1124 &bull; Turnov<br />Po&mdash;Pá 7:30&mdash;17:30<br />So 8:00&mdash;12:00<br /><a href="https://www.facebook.com/M%C3%81JA-zdrav%C3%A1-v%C3%BD%C5%BEiva-Turnov-414921071928413" target="_blank">FB Mája</a>' ],
+
+		
+		// Pharmacentrum Budějovická
+		[50.043256, 14.449621,'<div class="content"><p><h1>PHARMACENTRUM BUDĚJOVICKÁ</h1>Antala Staška 80 &bull; Praha 4<br />Po&mdash;Pá 7:00&mdash;19:00<br /><a href="http://www.mediconpharm.cz/zdrava-vyziva" target="_blank">mediconpharm.cz</a><br /><a href="mailto:pharmacentrum.budejovicka@mediconpharm.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Mlsný medvěd
+		[50.106298, 14.373255,'<div class="content"><p><h1>MLSNÝ MEDVĚD</h1>Na Pískách 41 &bull; Praha 6<br />Po&mdash;Pá 9:00&mdash;17:00<br /><a href="https://www.facebook.com/mlsnymedved.cz" target="_blank">FCB Mlsný medvěd</a><br /><a href="mailto:mlsny.medved@email.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+
+		// České delikatesy
+		[50.133198, 14.470302,'<div class="content"><p><h1>ČESKÉ DELIKATESY</h1>Šimůnkova 1 &bull; Praha 8<br />Po&mdash;Pá 8:00&mdash;19:00<br /><a href="http://ceskedelikatesy.cz/" target="_blank">ceskedelikatesy.cz</a><br /><a href="mailto:info@ceskedelikatesy.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+
+
+
+		
+];
+ 
+ 
+var image = {
+    url: 'img/place3.png',
+    // This marker is 20 pixels wide by 32 pixels tall.
+    size: new google.maps.Size(41, 55),
+    // The origin for this image is 0,0.
+    origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    anchor: new google.maps.Point(20, 55)
+  };
+
+ 
+function initialize()
+{
+		
+    var map = 
+        new google.maps.Map(document.getElementById('map-canvas'));
+    var bounds = new google.maps.LatLngBounds();
+    var infowindow = new google.maps.InfoWindow();
+     
+						
+	 
+	 
+    for (var i in LocationData)
+    {
+        var p = LocationData[i];
+        var latlng = new google.maps.LatLng(p[0], p[1]);
+        bounds.extend(latlng);
+         
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: p[2],
+			animation: google.maps.Animation.DROP,
+			icon: image,
+        });
+     
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(this.title);
+            infowindow.open(map, this);
+        });
+    }
+     
+    map.fitBounds(bounds);
+}
+
+
+
+
+
+ 
+google.maps.event.addDomListener(window, 'load', initialize);
+
+google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(p[2]);
+    infowindow.open(map, marker);
+});
+
+google.maps.event.addListener(marker, 'click', (function(mm, tt) {
+    return function() {
+        infowindow.setContent(tt);
+        infowindow.open(map, mm);
+    }
+})(marker, p[2]));
+
+
+
+
+
+</script>
+
+
+ 
+ 
+
+</head>
+		
+<body>
+		
+		
+	<div class="menu_holder">
+	<div class="menu_holder2">
+		
+		<a href="#nasevyvary"><div class="menu"><div class="menu2"><h1>NAŠE<br />VÝVARY<br /><span class="dot">&bull;</span></h1></div></div></a>
+		<!--<a href="#zcehovarime"><div class="menu"><div class="menu2"><h1>Z ČEHO<br />VAŘÍME<br /><span class="dot">&bull;</span></h1></div></div></a>-->
+		<a href="#kdekoupit"><div class="menu"><div class="menu2"><h1>KDE<br />KOUPIT<br /><span class="dot">&bull;</span></h1></div></div></a>
+		<a href="#casteotazky"><div class="menu"><div class="menu2"><h1>ČASTÉ<br />OTÁZKY<br /><span class="dot">&bull;</span></h1></div></div></a>
+		<a href="http://www.konecnevyvar.cz"><div class="menu"><div class="menu2"><img src="img/fb_.png" width="65" id="fb" onmouseover="hover()" onmouseout="out()" style="margin-top: -23px" /></div></div></a>
+		<a href="http://www.fb.com/konecnevyvar" target="_blank"><div class="menu"><div class="menu2"><h1>FACEBOOK<br /><span class="dot">&bull;</span></h1></div></div></a>
+		<a href="#onas"><div class="menu"><div class="menu2"><h1>O NÁS<br /><span class="dot">&bull;</span></h1></div></div></a>
+		<a href="#kontakt"><div class="menu"><div class="menu2"><h1>KONTAKT<br /><span class="dot">&bull;</span></h1></div></div></a>
+		
+	</div>
+	</div>
+
+
+	
+<div id="body_holder"><div id="body_holder2">
+	
+																		
+		<div id="nasevyvary"></div>
+		
+				<div class="header">
+				</div>
+				
+				<div class="header2">
+				<h2><!-- &bull;&nbsp; -->NAŠE<br />VÝVARY<!--&nbsp;&bull;--></h2>
+				</div>
+			
+
+			<div class="vyvary" id="green">
+			
+				<p>		
+						
+						<img src="img/zeleninovy.jpg" width="300" class="left" style="padding-top: 40px;">
+						
+						<br /><br /><br />
+						
+						<!-- <h3>ZELENINOVÝ VÝVAR</h3> -->
+				
+						Máte vážnou závislost na rajčatové, hrachové, brokolicové, žampionové, pórkové, špenátové nebo dýňové polévce? Pokud ano, našli jste přítele, který vám ušetří hromadu času při loupání mrkve do vývaru. Také úspěšně prošel chuťovou atestací u dětí.  
+						
+						<br /><br />
+						<h1>DOPORUČUJEME</h1>
+						
+						<p>
+						<ul>
+						<li>do všech zeleninových polévek</li>
+						<li>do vegetariánského risotta či kuskusu</li>
+						<li>dětem, které už nebaví přesnídávky</li>
+						</ul>
+						</p>
+						
+						<br />
+						<h1>SLOŽENÍ</h1>
+						
+						voda &middot; mrkev &middot; cibule &middot; pórek &middot; <b>celer</b> &middot; petržel<br />
+						 bobkový&nbsp;list &middot; nové koření &middot; pepř
+						
+						<br /><br />
+						
+						
+						<p class="pikto" style="margin-left: -13px;">
+						<img src="img/bezchemie_z.png"><br />
+						Bez chemie
+						</p>
+						
+						<p class="pikto">
+						<img src="img/bezsoli_z.png"><br />
+						Bez soli
+						</p>
+						
+						<p class="pikto">
+						<img src="img/bezlepku_z.png"><br />
+						Bez lepku
+						</p>
+						
+						<p class="pikto">
+						<img src="img/cas_z.png"><br />
+						Ušetřený čas:<br />1 hodina
+						</p>
+						
+				
+				</p>
+			
+			</div>
+			
+			
+			
+				<br /><br /><br /><br /><br /><br />
+				
+				<div class="line"></div>
+				
+				<br /><br /><br /><br /><br />
+			
+
+		
+				<div class="vyvary" id="orange">
+				
+				<p>		
+						
+						<img src="img/kureci.jpg" width="300" class="left" style="margin-top: -10px;">
+						
+						<!-- <h3>KUŘECÍ VÝVAR</h3> -->
+				
+						Klasický základ kvalitního vaření. Využití v kuchyni je nekonečně univerzální a nedá se použít nevhodně. Zkoušeli jsme to. Možno také aplikovat jako podporu imunitního systému nebo jako vysoce efektivní vyprošťovák.
+						
+						<br /><br />
+						<h1>DOPORUČUJEME</h1>
+						
+						<ul>
+						<li>do jakékoliv polévky</li>
+						<li>do jakékoliv omáčky</li>
+						<li>k podlévání masa a italského risotta</li>
+						<li>s kořenovou zeleninou a domácími nudlemi</li>
+						</ul>
+						
+						<br />
+						<h1>SLOŽENÍ</h1>
+						
+						voda &middot; kuřecí maso a skelety &middot; mrkev &middot; cibule &middot; pórek &middot; česnek<br />
+						petržel &middot; bobkový list &middot; nové koření &middot; pepř
+						
+						<br /><br />
+						
+						<p class="pikto" style="margin-left: -13px;">
+						<img src="img/bezchemie_k.png"><br />
+						Bez chemie
+						</p>
+						
+						<p class="pikto">
+						<img src="img/bezsoli_k.png"><br />
+						Bez soli
+						</p>
+						
+						<p class="pikto">
+						<img src="img/bezlepku_k.png"><br />
+						Bez lepku
+						</p>
+						
+						<p class="pikto">
+						<img src="img/cas_k.png"><br />
+						Ušetřený čas:<br />3 hodiny
+						</p>
+				
+				</div>
+				
+				</p>
+		</div>
+				
+				<br /><br /><br /><br /><br /><br />
+				
+				<div class="line"></div>
+				
+				<br /><br /><br /><br /><br />
+			
+		<!-- <div class="soon2" id="pripravujeme_hovezi"><h4>ZA PÁR DNÍ JE TU!</h4></div><div class="soon"> -->
+						
+				<div class="vyvary" id="brown">
+				
+				<p>		
+						
+						<img src="img/hovezi_.jpg" width="300" class="left" style="margin-top: -10px;">
+						
+						<h3>HOVĚZÍ VÝVAR</h3>
+				
+						Deset z deseti babiček se shoduje: dobrý hovězí vývar je silnější než aspirin. Jeho vůně má široký radius a díky prokázaným léčebným vlastnostem se dá použít i v aromaterapii. Gastronomická maturita pro seriózní vaření.
+						
+						<br /><br />
+						<h1>DOPORUČUJEME</h1>
+						
+						<ul>
+						<li>do seriózních omáček</li>
+						<li>do guláše</li>
+						<li>k dušení žebírek, líček, zvěřiny a podobně geniálních záležitostí</li>
+						<li>s kořenovou zeleninou a játrovými knedlíčky</li>
+						</ul>
+						
+						<br />
+						<h1>SLOŽENÍ</h1>
+						
+						voda &middot; hovězí maso a kosti &middot; mrkev &middot; <b>celer</b> &middot; cibule &middot; petržel<br />
+						bobkový list &middot; nové koření &middot; pepř
+						
+						<br /><br />
+						
+						<p class="pikto" style="margin-left: -13px;">
+						<img src="img/bezchemie_h.png"><br />
+						Bez chemie
+						</p>
+						
+						<p class="pikto">
+						<img src="img/bezsoli_h.png"><br />
+						Bez soli
+						</p>
+						
+						<p class="pikto">
+						<img src="img/bezlepku_h.png"><br />
+						Bez lepku
+						</p>
+						
+						<p class="pikto">
+						<img src="img/cas_h.png"><br />
+						Ušetřený čas:<br />8 hodin
+						</p>
+				
+				</div>
+				
+				</p>
+		</div>
+				
+				<br /><br />
+
+		<!-- 
+
+		<div id="zcehovarime"></div>
+	
+				<div class="header">
+				</div>
+				
+				<div class="header2">
+				<h2>Z ČEHO<br />VAŘÍME</h2>
+				</div>		
+		
+						<center>
+						<div id="jambor">
+						
+						<p>		
+											
+						<img src="img/jambor2_.jpg" width="500">
+						
+						<br /><br />
+						
+						<h3>ZELENINA</h3>
+				
+						
+						Zeleninu odebíráme z rodinné farmy Jamboz. Rodina Milana Jambora vlastní a stará se o malou farmu za Čáslaví již čtvrť století. Od chvíle, kdy jsme oloupali první mrkev nám bylo jasné, že takhle voní zelenina, o kterou se někdo stará a nedohání její velikost nebo barvu chemickým dopingem. Ani jsme od pana Jambora nemuseli slyšet, že používá pouze přírodní hnojiva a chemické ošetření omezuje na minimum. Je to znát. 
+						<br /><br />
+						<a href="http://www.jamboz.cz" target="_blank">jamboz.cz</a>
+						
+						<br /><br /><br /><br /><br />
+						
+						<img src="img/louzna_.jpg" width="500">
+						
+						<br /><br />
+						
+						<h3>KUŘATA</h3>
+				
+						
+						Farmu Loužná jsme chtěli oslovit už od začátku&mdash;dobré zkušenosti&nbsp;s&nbsp;jejich kuřaty k nám doléhaly ze všech stran. Zabývá se volným chovem kuřat, která jsou v Čechách jak vylíhnuta, tak i&nbsp;vykrmena. Doba výkrmu celou pšenicí trvá až 70 dní, oproti běžnému výkrmu do 40 dnů. Kuřata nedopují ničím jiným než přirozenou intenzitou denního světla v pohodovém jihošumavském prostředí, kde se mohou volně pohybovat. Tomu také odpovídá jejich velikost, chuť masa a samozřejmě i jeho složení.
+						<br /><br />
+						<a href="http://www.farmalouzna.cz" target="_blank">farmalouzna.cz</a>
+						
+						
+						</p>
+						
+						</div>
+						</center>
+
+					-->
+	
+		<div id="kdekoupit"></div>
+				
+				<div id="map-canvas"></div>
+				
+				<center>
+				
+				<div class="header_mapa">
+				</div>
+				
+				<div class="header2_mapa">
+				<h2><!-- &bull;&nbsp; -->KDE<br />KOUPIT<!--&nbsp;&bull;--></h2>
+				</div>
+
+				</center>
+
+				<center>
+
+				<div id="objednat_holder">
+
+					
+				
+										
+						<!--
+						<div id="objednat_FB">
+								
+							<img src="img/freshbedynky.png" width="181" style="margin-top: 0px" />
+							<a href="https://freshbedynky.cz/farma/Konecne_vyvar" target="_blank" style="text-decoration: none;">						
+							<div id="button"><h2>OBJEDNAT</h2></div>
+							</a>
+							
+						</div>
+						-->
+
+						
+						<div id="objednat_K">
+								
+							<a href="https://www.kolonial.cz/vyhledavani?search=Kone%C4%8Dn%C4%9B+v%C3%BDvar" target="_blank" style="text-decoration: none;"><img src="img/kolonial.png" width="181" style="margin-top: 0px" />
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+						
+						
+						<div id="objednat_R">
+							
+							<a href="https://www.rohlik.cz/hledat/kone%C4%8Dn%C4%9B%20v%C3%BDvar" target="_blank" style="text-decoration: none;"><img src="img/rohlik.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+						
+						<div id="objednat_SB">
+							
+							<a href="http://www.svetbedynek.cz/domaci_vyvar/" target="_blank" style="text-decoration: none;"><img src="img/svetbedynek.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+
+						<div id="objednat_CD">
+							
+							<a href="http://ceskedelikatesy.cz/138-konecne-vyvar" target="_blank" style="text-decoration: none;"><img src="img/ceske_delikatesy.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+
+					
+				
+				</div>
+
+				
+
+				<div id="objednat_holder2">
+
+						<div id="objednat_MF">
+							
+							<a href="https://eshop.myfoodmarket.cz/vyhledavani?query=kone%C4%8Dn%C4%9B+v%C3%BDvar" target="_blank" style="text-decoration: none;"><img src="img/myfood.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+
+						<div id="objednat_D">
+							
+							<a href="http://debnickari.sk/" target="_blank" style="text-decoration: none;"><img src="img/debnickari.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+
+						<div id="objednat_LA">
+							
+							<a href="http://www.lokapetit.sk/produkty/search/vyvar" target="_blank" style="text-decoration: none;"><img src="img/lokapetit.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+				</div>
+				
+				</center>
+					
+	
+		<div id="casteotazky"></div>
+	
+				<div class="header_mapa">
+				</div>
+				
+				<div class="header2_mapa">
+				<h2><!-- &bull;&nbsp; -->ČASTÉ<br />OTÁZKY<!--&nbsp;&bull;--></h2>
+				</div>
+			
+				<center>
+						<div id="otazky">
+						
+						<p>												
+						<br />				
+						<h3>KOLIK STOJÍ?</h3>
+						Naše doporučená cena pro kuřecí i zeleninový vývar je <b>55 Kč</b> a <b>95 Kč</b> pro hovězí.<!-- Bohužel ale nemůžeme mít zcela pod kontrolou, jak si prodejci cenu vývarů&nbsp;v&nbsp;jednotlivých obchodech nastaví. --><!-- Vyjímkou je potom speciální BIO edice pro <a href="https://freshbedynky.cz/farma/Konecne_vyvar" target="_blank">Freshbedynky.cz</a>,<br />která stojí <b>67 Kč</b>. -->
+						</p>
+						
+						<br /><br /><div class="line"></div><br /><br />
+						
+						<p>												
+						<br />
+						<h3>JAK DLOUHO VYDRŽÍ?</h3>
+						Oba vývary vydrží v chladničce až <b>30 dní</b> (atestace&nbsp;z&nbsp;Ústavu konzervace potravin na VŠCHT). Po otevření v&nbsp;ledničce vydrží 24&nbsp;hodin.
+						</p>
+						
+						<br /><br /><div class="line"></div><br /><br />
+						
+						<p>												
+						<br />
+						<h3>JE MOŽNÉ OBJEDNÁVAT PŘES E-SHOP?</h3>
+						Je! Pokud jste pražští, můžete objednávat přes donáškové služby <a href="https://www.rohlik.cz/hledat/kone%C4%8Dn%C4%9B%20v%C3%BDvar" target="_blank">Rohlik.cz</a> či <a href="https://www.kolonial.cz/vyhledavani?search=Kone%C4%8Dn%C4%9B+v%C3%BDvar" target="_blank">Kolonial.cz</a>, a po celé ČR rozváží vývary v&nbsp;bedýnkách <a href="http://www.svetbedynek.cz/domaci_vyvar/" target="_blank">Svetbedynek.cz</a>.<!-- nebo&mdash;vyžadujete-li BIO kvalitu&mdash;<a href="https://freshbedynky.cz/farma/Konecne_vyvar" target="_blank">Freshbedynky.cz</a>.-->
+						
+						</p>
+
+						<br /><br /><div class="line"></div><br /><br />
+												
+						
+						<p>												
+						<br />
+						<h3>JAKÝ MÁ SKLENKA OBJEM?</h3>
+						450 ml.
+						</p>
+						
+						<br /><br /><div class="line"></div><br /><br />
+						
+						<p>												
+						<br />
+						<h3>NECHCETE VYMĚNIT SKLENICE<br />ZA SÁČKY NEBO KELÍMKY?</h3>
+						Chceme. Snížili bychom tím cenu a nebyl by problém vzít si do tašky třeba tři. Nebo deset. A to ani nemluvíme o tom, jak elegantně by se vývarový sáček dal zamrazit. Nicméně na to je potřeba zařídit plnící linku za nemalý peníz &mdash; ale šetříme na to! ;)
+						</p>
+						
+						<br /><br /><div class="line"></div><br /><br />
+						
+						<p>												
+						<br />
+						<h3>JSTE NA FARMÁŘSKÝH TRZÍCH?</h3>
+						Bohužel. Máme pořád plné ruce práce s vařením a rozvážením a nedaří se nám najít čas zařídit si stánek.
+						</p>
+						
+						
+						
+						<br /><br /><div class="line"></div><br /><br />
+						<p>												
+						<br />
+						<h3>PLÁNUJETE DEMI-GLACE?</h3>
+						Ano, je další na seznamu. :)
+						</p>
+						
+						<br /><br /><div class="line"></div><br /><br />
+						<p>												
+						<br />
+						<h3>V MÉM OBLÍBENÉM FARMÁŘSKÉM OBCHODU NEMAJÍ KONEČNĚ VÝVAR. MOHU S TÍM NĚCO UDĚLAT?</h3>
+						To si piště, že můžete. Řekněte o nás prodejci, pošlete mu na email tyto stránky, přesvědčte ho a <b>donuťte</b> ho, aby si naše vývary objednal a my se postaráme o zbytek. :)
+						</p>
+						
+						
+						
+						</div>
+				</center>
+	
+		<div id="onas"></div>
+	
+				<div class="header">
+				</div>
+				
+				<div class="header3">
+				<h2><!-- &bull;&nbsp; -->O NÁS<!--&nbsp;&bull;--></h2>
+				</div>
+				
+				
+				<center>
+						<div id="o_nas">
+						
+						<p>		
+											
+						<img src="img/onas_.jpg" width="500">
+						
+						<br /><br /><br />
+						
+						Jsme tři kluci. Jarda &bdquo;Jaruna&ldquo; Vácha dělá firemní consulting, jeho brácha Honza je softwarový specialista a já, Jakub Gruber, jsem grafický designér. Co máme společného? Všichni jezdíme na longboardu a všichni milujeme vaření. Od počítačů si utíkáme odpočinout do kuchyně. Když jsme si jednou takhle utekli do Francie za jídlem a surfováním, Jarunu napadlo, že nám doma na trhu schází jeden produkt &mdash; poctivý vývar bez chemie a nesmyslů. 
+						Ze začátku jsme to nebrali moc vážně, ale čím dál víc jsme si začínali uvědomovat, jak moc bychom ho vlastně v regálech sami chtěli. Když jsme se vraceli, měli jsme už vymyšlený název, sháněli jsme recepty a plánovali první vaření...
+						<br /><!--<br /><br />Konečně vývar děláme ve svém volném čase a zjišťujeme, jestli o něj máte zájem &mdash; a zatím to vypadá, že ano. Za to děkujeme!-->
+						
+						</p>
+
+						<br /><br /><br /><br />
+						
+						<p>		
+											
+						<img src="img/konkurence_.jpg" width="500">
+						
+						<br /><br />
+				
+						<h3>JDĚTE S NÁMI DO BOJE PROTI KOSTKÁM</h3>
+						
+						Všelijaké kostičky a vaničky nás přesvědčují o tom, že bez problémů nahradí více něž hodinu tažený vývar. Těm, kteří na tohle nikdy neskočí, chceme v obchodě vedle bujónových náhražek nabídnout produkt, jaký by si doma uvařili sami, kdyby ovšem měli hodinu až tři navíc. A to nepočítáme loupání mrkve a cestu k řezníkovi. 
+						<br /><br />Jsme tři a jsme ještě pořád na začátku. Způsob, jakým se u nás kultura jídla v&nbsp;posledních letech proměnila k&nbsp;lepšímu, nás ale naplňuje vírou, že kvalitní a poctivý produkt si dnes cestu ke svému zákazníkovi najde.
+						<br /><br />Konečně vývar není ale jen produkt, je to také snaha o rozproudění diskuze na téma čerstvý vývar v českých obchodech. Pokud chcete, stejně jako my sami, aby byl jednoho dne vývar bez chemie součástí běžného sortimentu, podpořte náš projekt a my uděláme co je v&nbsp;našich silách, abychom se tomu aspoň přiblížili. Pojďte s námi do boje proti kostkám! 
+						
+						</p>							
+						
+						</div>
+				</center>
+	
+		<div id="kontakt"></div>
+	
+				<div class="header">
+				</div>
+				
+				<div class="header3">
+				<h2><!-- &bull;&nbsp; -->KONTAKT<!--&nbsp;&bull;--></h2><br />
+				</div>
+			
+			<div id="kontakty2">
+			
+				<div class="kontakty">
+				<img src="img/kuba_.jpg" width="160"><br />
+				<h3>JAKUB GRUBER</h3>
+				PR &bull; design &bull; opovrhovač kostek
+				<br /><br />
+				602 313 700<br />
+				<a href="mailto:jakub@konecnevyvar.cz" target="_blank">jakub@konecnevyvar.cz</a>
+				</div>
+				
+				<div class="kontakty">
+				<img src="img/jaruna_.jpg" width="160"><br />
+				<h3>JAROSLAV VÁCHA</h3>
+				zakladatel &bull; šéf &bull; nepřítel kostek
+				<br /><br />
+				603 114 869<br />
+				<a href="mailto:jaroslav@konecnevyvar.cz" target="_blank">jaroslav@konecnevyvar.cz</a>
+				</div>
+				
+				<div class="kontakty">
+				<img src="img/honza_.jpg" width="160"><br />
+				<h3>JAN VÁCHA</h3>
+				objednávač &bull; logistik &bull; hater kostek
+				<br /><br />
+				602 373 534<br />
+				<a href="mailto:jan@konecnevyvar.cz" target="_blank">jan@konecnevyvar.cz</a>
+				</div>
+
+
+			</div>
+			
+			<p id="zapati2">
+			Výrobce: Vývar Brothers s.r.o. &bull; Buchovcova 1731/1 &bull; 130 00 Praha 3 &bull; Česká republika &bull; IČ 63219549 &bull; DIČ CZ63219549
+			</p>
+
+			<p id="zapati3">
+			BÚ 2800901826/2010 &bull; IBAN CZ7220100000002800901826 &bull; BIC/SWIFT FIOBCZPPXXX
+			</p>
+			
+			<p id="zapati">
+			Konečně vývar &copy; 2016 &bull; Všechna práva vyhrazena &bull; Design a kód Jakub Gruber
+			</p>
+			
+			
+			
+			
+</div></div>
+	
+											<script>
+											  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+											  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+											  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+											  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+											  ga('create', 'UA-36851724-2', 'auto');
+											  ga('send', 'pageview');
+
+											</script>
+	
+		
+</body>
+
+</html>
