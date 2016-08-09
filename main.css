@@ -650,7 +650,7 @@ div#objednat_holder {
 
 div#objednat_holder2 {
 	/*width: 603px;*/
-	width: 674px;
+	width: 900px;
 	padding-top: 20px;
 	height: 280px;
 
@@ -668,46 +668,41 @@ div#objednat_FB{
 }
 */
 
-div#objednat_K{
-	width: 224px;
-	float: left;
-	text-align: center;
-	
-}
 
 
 div#objednat_R {
 	width: 224px;
 	float: left;
-	/*border-left: 1px solid #e8e8e8;*/
-	border-left: 1px solid #e8e8e8;
+	text-align: center;
+	border-right: 1px solid #e8e8e8;
 	
 
+}
+
+
+div#objednat_KOL {
+	border-right: 1px solid #e8e8e8;
+	width: 224px;
+	float: left;
+	text-align: center;
+
+}
+
+
+
+div#objednat_KOS {
+	border-right: 1px solid #e8e8e8;
+	width: 224px;
+	float: left;
+	text-align: center;
 
 }
 
 div#objednat_SB {
-	border-left: 1px solid #e8e8e8;
+	
 	width: 224px;
 	float: left;
 	text-align: center;
-}
-
-
-div#objednat_D {
-	width: 224px;
-	float: left;
-	text-align: center;
-
-}
-
-
-div#objednat_LA {
-	border-left: 1px solid #e8e8e8;
-	width: 224px;
-	float: left;
-	text-align: center;
-
 }
 
 div#objednat_MF {
@@ -718,14 +713,32 @@ div#objednat_MF {
 
 }
 
+
 div#objednat_CD {
-	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
 	width: 224px;
 	float: left;
 	text-align: center;
 
 }
 
+
+div#objednat_D {
+	width: 224px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #e8e8e8;
+
+}
+
+
+div#objednat_LA {
+	
+	width: 224px;
+	float: left;
+	text-align: center;
+
+}
 div#button {
 	width: 119px;
 	height: 59px;

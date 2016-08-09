@@ -221,6 +221,11 @@
 		// Sklizeno Brno Palackého
 		[49.226564, 16.591446, '<div class="content"><p><h1>SKLIZENO</h1>Palackého třída 238/93 &bull; Brno<br />Po&mdash;Pá 8:00&mdash;19:30<br />So 9:00&mdash;13:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:palackeho@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
 
+	// Sklizeno Other
+
+		// Sklizeno Zlín
+		[49.226782, 17.668132, '<div class="content"><p><h1>SKLIZENO</h1>Náměstí míru 174 &bull; Zlín<br />Po&mdash;Pá 7:30&mdash;21:00<br />So&mdash;Ne 9:00&mdash;21:00<br /><a href="http://www.sklizeno.cz/" target="_blank">sklizeno.cz</a><br /><a href="mailto:zlin@sklizeno.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
 
 	// My Food
 
@@ -357,6 +362,26 @@
 
 		// České delikatesy
 		[50.133198, 14.470302,'<div class="content"><p><h1>ČESKÉ DELIKATESY</h1>Šimůnkova 1 &bull; Praha 8<br />Po&mdash;Pá 8:00&mdash;19:00<br /><a href="http://ceskedelikatesy.cz/" target="_blank">ceskedelikatesy.cz</a><br /><a href="mailto:info@ceskedelikatesy.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Mi.Ja
+		[50.775312, 15.054692, '<div class="content"><p><h1>MI.JA</h1>Zhořelecká 414/19 &bull; Liberec<br />Po&mdash;Pá 8:00&mdash;18:00<br />So 9:00&mdash;16:00<br /><a href="http://www.mi-ja.cz/" target="_blank">mi-ja.cz</a><br /><a href="mailto:info@mi-ja.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Spajz
+		[50.512142, 13.622436, '<div class="content"><p><h1>ŠPAJZ</h1>Pod Resslem 1978/2 &bull; Most<br />Po&mdash;Pá 8:00&mdash;18:00<br />So 8:00&mdash;11:00<br /><a href="https://www.facebook.com/Špajz-1757097311194301" target="_blank">FCB Špajz</a><br /><a href="mailto:info@mi-ja.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Vino a lahudky
+		[49.927943, 14.271456, '<div class="content"><p><h1>VÍNO A LAHŮDKY</h1>Vítova 8 &bull; Dobřichovice<br />Po&mdash;St 9:00&mdash;19:00<br />Čt&mdash;So 9:00&mdash;21:00<br />Ne 11:00&mdash;19:00<br /><a href="http://www.vinoalahudky.cz/" target="_blank">vinoalahudky.cz</a><br /><a href="mailto:info@vinoalahudky.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Gurmán koloniál
+		[50.163422, 16.275755, '<div class="content"><p><h1>GURMÁN KOLONIÁL</h1>Komenského 43 &bull; Rychnov nad Kněžnou<br />Po&mdash;Pá 9:00&mdash;17:00<br /><a href="https://www.facebook.com/Gurm%C3%A1n-koloni%C3%A1l-602454586579950/?fref=ts" target="_blank">FCB Gurmán koloniál</a></p></div>' ],
+
+
+		// Dej si bio
+		[49.403568, 15.589960, '<div class="content"><p><h1>DEJ SI BIO</h1>Nám. Svobody 1373/11 &bull; Jihlava<br />Po&mdash;Pá 7:30&mdash;17:30<br /><br />So 9:00&mdash;12:00<a href="http://www.dejsibio.cz/" target="_blank">dejsibio.cz</a><br /><a href="mailto:jihlava@dejsibio.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
+		// Dej si bio
+		[49.609394, 15.579258, '<div class="content"><p><h1>DEJ SI BIO</h1>Horní 181 &bull; Havlíčkův Brod<br />Po&mdash;Pá 7:30&mdash;17:30<br /><br />So 9:00&mdash;12:00<a href="http://www.dejsibio.cz/" target="_blank">dejsibio.cz</a><br /><a href="mailto:havlickuvbrod@dejsibio.cz?subject=Máte Konečně vývar?" target="_blank">poptat vývar</a></p></div>' ],
+
 
 
 
@@ -739,14 +764,6 @@ google.maps.event.addListener(marker, 'click', (function(mm, tt) {
 						-->
 
 						
-						<div id="objednat_K">
-								
-							<a href="https://www.kolonial.cz/vyhledavani?search=Kone%C4%8Dn%C4%9B+v%C3%BDvar" target="_blank" style="text-decoration: none;"><img src="img/kolonial.png" width="181" style="margin-top: 0px" />
-							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
-							</a>
-							
-						</div>
-						
 						
 						<div id="objednat_R">
 							
@@ -757,6 +774,24 @@ google.maps.event.addListener(marker, 'click', (function(mm, tt) {
 							
 						</div>
 						
+						<div id="objednat_KOL">
+								
+							<a href="https://www.kolonial.cz/vyhledavani?search=Kone%C4%8Dn%C4%9B+v%C3%BDvar" target="_blank" style="text-decoration: none;"><img src="img/kolonial.png" width="181" style="margin-top: 0px" />
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+					
+							<div id="objednat_KOS">
+							
+							<a href="https://www.kosik.cz/hledat?q=konecne+vyvar" target="_blank" style="text-decoration: none;"><img src="img/kosik.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+						
+						
 						<div id="objednat_SB">
 							
 							<a href="http://www.svetbedynek.cz/domaci_vyvar/" target="_blank" style="text-decoration: none;"><img src="img/svetbedynek.png" width="181" style="margin-top: 0px" />
@@ -766,14 +801,9 @@ google.maps.event.addListener(marker, 'click', (function(mm, tt) {
 							
 						</div>
 
-						<div id="objednat_CD">
-							
-							<a href="http://ceskedelikatesy.cz/138-konecne-vyvar" target="_blank" style="text-decoration: none;"><img src="img/ceske_delikatesy.png" width="181" style="margin-top: 0px" />
-													
-							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
-							</a>
-							
-						</div>
+					
+
+						
 
 					
 				
@@ -786,6 +816,15 @@ google.maps.event.addListener(marker, 'click', (function(mm, tt) {
 						<div id="objednat_MF">
 							
 							<a href="https://eshop.myfoodmarket.cz/vyhledavani?query=kone%C4%8Dn%C4%9B+v%C3%BDvar" target="_blank" style="text-decoration: none;"><img src="img/myfood.png" width="181" style="margin-top: 0px" />
+													
+							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
+							</a>
+							
+						</div>
+
+						<div id="objednat_CD">
+							
+							<a href="http://ceskedelikatesy.cz/138-konecne-vyvar" target="_blank" style="text-decoration: none;"><img src="img/ceske_delikatesy.png" width="181" style="margin-top: 0px" />
 													
 							<center><div id="button"><h2>OBJEDNAT ON-LINE</h2></div></center>
 							</a>
