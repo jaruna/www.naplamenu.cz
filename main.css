@@ -635,10 +635,22 @@ color: #0033ff;
 }
 
 
-div#objednat_holder {
+div#globus_holder {
 	/*width: 603px;*/
 	width: 900px;
 	padding-top: 517px;
+	/*height: 280px;*/
+	margin: 0 auto;
+	
+	
+
+}
+
+
+div#objednat_holder {
+	/*width: 603px;*/
+	width: 900px;
+	/*padding-top: 517px;*/
 	height: 280px;
 	margin: 0 auto;
 	
@@ -739,6 +751,17 @@ div#objednat_LA {
 	text-align: center;
 
 }
+
+
+
+div#objednat_DO {
+	
+	width: 224px;
+	/*float: left;*/
+	text-align: center;
+
+}
+
 div#button {
 	width: 119px;
 	height: 59px;
