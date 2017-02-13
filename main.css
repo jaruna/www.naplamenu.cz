@@ -672,6 +672,20 @@ div#objednat_holder2 {
 
 }
 
+
+
+div#objednat_holder3 {
+
+	width: 600px;
+	padding-top: 20px;
+	height: 280px;
+	margin: 0 auto;
+
+	
+	
+
+}
+
 /*
 div#objednat_FB{
 	width: 224px;
@@ -757,10 +771,22 @@ div#objednat_LA {
 div#objednat_DO {
 	
 	width: 224px;
-	/*float: left;*/
+	float: left;
 	text-align: center;
+	border-left: 1px solid #e8e8e8;
 
 }
+
+
+
+div#objednat_FB {
+	width: 224px;
+	text-align: center;
+
+	
+	float: left;
+}
+
 
 div#button {
 	width: 119px;
