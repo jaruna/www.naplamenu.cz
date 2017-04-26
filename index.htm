@@ -84,7 +84,7 @@
 	// Globus
 
 		// Globus Praha Černý most
-		[50.108841, 14.586645, '<div class="content"><p><h1>GLOBUS</h1>Chlumecká 765/6 &bull; Praha 9<br />Po&mdash;Ne 8:00&mdash;22:00<br /><a href="https://www.globus.cz/cerny-most/mapa-a-kontakty.html" target="_blank">globus.cz</a><br />zákaznická linka: 800 241 242</p></div>' ],
+		[50.108841, 14.586645, '<div class="content"><p><h1>GLOBUS</h1>Chlumecká 765/6 &bull; Praha 9<br />Po&mdash;Ne 8:00&mdash;22:00<br /><a href="https://www.globus.cz/cerny-most/mapa-a-kontakty.html" target="_blank">globus.cz</a><br />zákaznická linka: 800 241 242</p></div>', 'Globus' ],
 
 		// Globus Praha Čakovice
 		[50.151424, 14.505888, '<div class="content"><p><h1>GLOBUS</h1>Kostelecká 823 &bull; Praha 9<br />Po&mdash;Ne 7:00&mdash;22:00<br /><a href="https://www.globus.cz/praha-cakovice/mapa-a-kontakty.html" target="_blank">globus.cz</a><br />zákaznická linka: 800 241 242</p></div>' ],
@@ -533,13 +533,14 @@ function initialize()
         var marker = new google.maps.Marker({
             position: latlng,
             map: map,
-            title: p[2],
+            title: p[3],
+		contentText: p[2],
 			animation: google.maps.Animation.DROP,
 			icon: image,
         });
      
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent(this.title);
+            infowindow.setContent(this.contentText);
             infowindow.open(map, this);
         });
     }
