@@ -530,10 +530,22 @@ function initialize()
         var latlng = new google.maps.LatLng(p[0], p[1]);
         bounds.extend(latlng);
          
+	    var title;
+	    if (p[3]) {
+		title = p[3];
+	    } else {
+	    	var x=p[2];
+	    	var start = x.indexOf("<h1>");
+		var end = x.indexOf("</h1>");
+		if (start >= 0 && end > start) {
+  			title = x.substring(start + 4, end);
+		}
+	    }
+	    
         var marker = new google.maps.Marker({
             position: latlng,
             map: map,
-            title: p[3],
+            title: title,
 		contentText: p[2],
 			animation: google.maps.Animation.DROP,
 			icon: image,
