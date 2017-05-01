@@ -332,6 +332,7 @@ h4 {
    
 }
 
+
 .content h1  {
 	font-family: Helvetica, Arial, Arial CE, sans-serif;
 	font-weight: bold;
@@ -617,6 +618,11 @@ b {
 }
 
 
+#darkbrown, #darkbrown h1, #darkbrown h3 {
+	color: #812a00;
+}
+
+
 #green, #green h1, #green h3 {
 	color: #00b55a;
 }
@@ -625,9 +631,18 @@ b {
 	color: #e39600;
 }
 
-#brown, #brown h1, #brown h3{
-	color: #b86b58;
+#brown, #brown h1, #brown h3 {
+	color: #af5236;
 }
+
+#fazolova, #fazolova h1, #fazolova h3 {
+	color: #006a4e;
+}
+
+#marocka, #marocka h1, #marocka h3 {
+	color: #f34124;
+}
+
 
 
 h1, h3, h4 {
@@ -641,6 +656,7 @@ div#globus_holder {
 	padding-top: 517px;
 	/*height: 280px;*/
 	margin: 0 auto;
+
 	
 	
 
@@ -782,6 +798,16 @@ div#objednat_DO {
 div#objednat_FB {
 	width: 224px;
 	text-align: center;
+
+	
+	float: left;
+}
+
+
+div#objednat_ZF {
+	width: 224px;
+	text-align: center;
+	border-left: 1px solid #e8e8e8;
 
 	
 	float: left;
