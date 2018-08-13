@@ -28,7 +28,7 @@ html, body {
 	background-color: white;
 	font-size: 14px;
 	/*color: #0000ff;*/
-	color: #0033ff;
+	color: #001489;
 	line-height: 19px;
 	font-family: Apercu Light, Apercu Regular, Helvetica, Arial, Arial CE, sans-serif;
 	letter-spacing: 1px;
@@ -373,19 +373,19 @@ h5 {
 a {
 	text-decoration: underline;
 	/*color: #0000ff;*/
-	color: #0033ff;
+	color: #001489;
 }
 
 a:link {
 	text-decoration: underline;
 	/*color: #0000ff;*/
-	color: #0033ff;
+	color: #001489;
 }
 
 a:hover {
 	text-decoration: none;
 	/*color: #0000ff;*/
-	color: #0033ff;
+	color: #001489;
 }
 
 div#nasevyvary {
@@ -662,7 +662,7 @@ b {
 
 
 h1, h3, h4 {
-color: #0033ff;
+color: #001489;
 }
 
 
